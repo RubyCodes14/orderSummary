@@ -1,0 +1,105 @@
+:root{
+    --borderRadius: 15px;
+    --plan-container-height: 70px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap');
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 1440px;
+    font-size: 14px;
+}
+.form-main{
+    width: 350px;
+    height: 520px;
+    border-radius: var(--borderRadius);
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px rgb(216, 213, 209);
+    position: relative;
+}
+#music-groove-img{
+    width: 350px;
+    height: 180px;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+}
+#form-title{
+    text-align: center;
+}
+#form-description-text{
+    width: 260px;
+    text-align: center;
+    margin: auto;
+}
+#plan-container{
+    background-color: hsl(0, 0%, 95%);
+    height: var(--plan-container-height);
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#music-icon{
+    height: calc(var(--plan-container-height) - var(--plan-container-height) / 2);
+    padding-left: 10px;
+}
+td{
+    width: 20px;
+}
+.music-icon{
+    width: 58px;
+}
+.price{
+    width: 100px;
+    line-height: 20px;
+}
+.annual-plan{
+    font-weight: bold;
+}
+.price-tag{
+    color: rgb(116, 116, 116);
+}
+.change-hyperlink{
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+.change-hyperlink:hover{
+    text-decoration: none;
+    color: hsl(245, 54%, 47%);
+}
+.payment-button{
+    background-color: hsl(246, 97%, 37%);
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    height: 40px;
+    position: relative;
+    box-shadow: 5px 8px 8px 2px rgb(137, 137, 172);
+}
+
+.payment-button:hover{
+    color: white;
+    background-color: hsl(245, 54%, 47%);
+    box-shadow: 5px 8px 8px 2px rgb(137, 137, 172);
+}
+.cancel-order{
+    position: relative;
+    text-align: center;
+    margin-top: 24px;
+}
+.cancel-order a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+.cancel-order a:hover{
+    color: black;
+}
